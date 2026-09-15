@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stores Directory – DealDrop</title>
+    <meta name="description" content="Browse popular retailers and discover available savings and coupons on DealDrop.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
+                    </svg>
+                    DealDrop
+                </a>
+            </div>
+            
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="deals.html">Deals</a>
+                <a href="stores.html" class="active">Stores</a>
+            </div>
+
+            <div class="nav-actions">
+                <div class="nav-search">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                    <input type="text" placeholder="Search stores, brands, or deals">
+                </div>
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Nav -->
+    <div class="mobile-nav" id="mobile-nav">
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="deals.html">Deals</a>
+            <a href="stores.html" class="active">Stores</a>
+        </div>
+        <div class="nav-search">
+            <input type="text" placeholder="Search...">
+        </div>
+    </div>
+
+    <main>
+        <div class="page-header">
+            <div class="container">
+                <h1>Find Deals by Store</h1>
+                <p>Browse popular retailers and discover available savings.</p>
+            </div>
+        </div>
+
+        <section class="section container">
+            <!-- Filter Bar -->
+            <div class="filter-bar" style="flex-direction: column; align-items: stretch;">
+                <div class="search-input-large" style="max-width: 500px; margin: 0 auto;">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                    <input type="text" id="store-search" placeholder="Search stores...">
+                </div>
+                
+                <div class="alphabet-filter">
+                    <button class="alpha-btn all-btn active" data-letter="all">All</button>
+                    <button class="alpha-btn" data-letter="A">A</button>
+                    <button class="alpha-btn" data-letter="B">B</button>
+                    <button class="alpha-btn" data-letter="C">C</button>
+                    <button class="alpha-btn" data-letter="D">D</button>
+                    <button class="alpha-btn" data-letter="E">E</button>
+                    <button class="alpha-btn" data-letter="F">F</button>
+                    <button class="alpha-btn" data-letter="G">G</button>
+                    <button class="alpha-btn" data-letter="H">H</button>
+                    <button class="alpha-btn" data-letter="I">I</button>
+                    <button class="alpha-btn" data-letter="J">J</button>
+                    <button class="alpha-btn" data-letter="K">K</button>
+                    <button class="alpha-btn" data-letter="L">L</button>
+                    <button class="alpha-btn" data-letter="M">M</button>
+                    <button class="alpha-btn" data-letter="N">N</button>
+                    <button class="alpha-btn" data-letter="O">O</button>
+                    <button class="alpha-btn" data-letter="P">P</button>
+                    <button class="alpha-btn" data-letter="Q">Q</button>
+                    <button class="alpha-btn" data-letter="R">R</button>
+                    <button class="alpha-btn" data-letter="S">S</button>
+                    <button class="alpha-btn" data-letter="T">T</button>
+                    <button class="alpha-btn" data-letter="U">U</button>
+                    <button class="alpha-btn" data-letter="V">V</button>
+                    <button class="alpha-btn" data-letter="W">W</button>
+                </div>
+            </div>
+
+            <!-- Stores Grid -->
+            <div class="grid grid-cols-6 stores-grid">
+                
+                <div class="card store-card">
+                    <div class="store-logo-wrap">AMZ</div>
+                    <h3>Amazon</h3>
+                    <p>12 Active Deals</p>
+                    <a href="deals.html" class="btn btn-secondary btn-sm">View Deals</a>
+                </div>
+
+                <div class="card store-card">
+                    <div class="store-logo-wrap">ADI</div>
+                    <h3>Adidas</h3>
+                    <p>8 Active Deals</p>
+                    <a href="deals.html" class="btn btn-secondary btn-sm">View Deals</a>
+                </div>
+
+                <div class="card store-card">
+                    <div class="store-logo-wrap">BB</div>
+                    <h3>Best Buy</h3>
+                    <p>15 Active Deals</p>
+                    <a href="deals.html" class="btn btn-secondary btn-sm">View Deals</a>
+                </div>
+
+                <div class="card store-card">
+                    <div class="store-logo-wrap">DD</div>
+                    <h3>DoorDash</h3>
+                    <p>4 Active Deals</p>
+                    <a href="deals.html" class="btn btn-secondary btn-sm">View Deals</a>
+                </div>
+
+                <div class="card store-card">
+                    <div class="store-logo-wrap">EBAY</div>
+                    <h3>eBay</h3>
+                    <p>24 Active Deals</p>
+                    <a href="deals.html" class="btn btn-secondary btn-sm">View Deals</a>
+                </div>
+
+                <div class="card store-card">
+                    <div class="store-logo-wrap">ETSY</div>
+                    <h3>Etsy</h3>
+                    <p>9 Active Deals</p>
+                    <a href="deals.html" class="btn btn-secondary btn-sm">View Deals</a>
+                </div>
+
+                <div class="card store-card">
+                    <div class="store-logo-wrap">HD</div>
+                    <h3>Home Depot</h3>
+                    <p>11 Active Deals</p>
+                    <a href="deals.html" class="btn btn-secondary btn-sm">View Deals</a>
+                </div>
+
+                <div class="card store-card">
+                    <div class="store-logo-wrap">KOHL</div>
+                    <h3>Kohl's</h3>
+                    <p>14 Active Deals</p>
+                    <a href="deals.html" class="btn btn-secondary btn-sm">View Deals</a>
+                </div>
+
+                <div class="card store-card">
+                    <div class="store-logo-wrap">LOWE</div>
+                    <h3>Lowe's</h3>
+                    <p>7 Active Deals</p>
+                    <a href="deals.html" class="btn btn-secondary btn-sm">View Deals</a>
+                </div>
+
+                <div class="card store-card">
+                    <div class="store-logo-wrap">MACY</div>
+                    <h3>Macy's</h3>
+                    <p>19 Active Deals</p>
+                    <a href="deals.html" class="btn btn-secondary btn-sm">View Deals</a>
+                </div>
+
+                <div class="card store-card">
+                    <div class="store-logo-wrap">NIKE</div>
+                    <h3>Nike</h3>
+                    <p>6 Active Deals</p>
+                    <a href="deals.html" class="btn btn-secondary btn-sm">View Deals</a>
+                </div>
+
+                <div class="card store-card">
+                    <div class="store-logo-wrap">NORD</div>
+                    <h3>Nordstrom</h3>
+                    <p>5 Active Deals</p>
+                    <a href="deals.html" class="btn btn-secondary btn-sm">View Deals</a>
+                </div>
+
+                <div class="card store-card">
+                    <div class="store-logo-wrap">SEPH</div>
+                    <h3>Sephora</h3>
+                    <p>10 Active Deals</p>
+                    <a href="deals.html" class="btn btn-secondary btn-sm">View Deals</a>
+                </div>
+
+                <div class="card store-card">
+                    <div class="store-logo-wrap">TGT</div>
+                    <h3>Target</h3>
+                    <p>22 Active Deals</p>
+                    <a href="deals.html" class="btn btn-secondary btn-sm">View Deals</a>
+                </div>
+
+                <div class="card store-card">
+                    <div class="store-logo-wrap">WM</div>
+                    <h3>Walmart</h3>
+                    <p>30+ Active Deals</p>
+                    <a href="deals.html" class="btn btn-secondary btn-sm">View Deals</a>
+                </div>
+
+                <div class="card store-card">
+                    <div class="store-logo-wrap">WAY</div>
+                    <h3>Wayfair</h3>
+                    <p>13 Active Deals</p>
+                    <a href="deals.html" class="btn btn-secondary btn-sm">View Deals</a>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <a href="index.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
+                            </svg>
+                            DealDrop
+                        </a>
+                    </div>
+                    <p>Discover the latest coupons, promo codes, and deals from popular stores across the US.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="deals.html">Deals</a></li>
+                        <li><a href="stores.html">Stores</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="disclaimer.html">Disclaimer</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 DealDrop. All rights reserved.</p>
+                <p>Affiliate Disclosure: DealDrop may earn a commission when you click certain links or make a purchase.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="24" height="24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+        </svg>
+    </button>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DealDrop – Coupons, Promo Codes & Online Deals</title>
+    <meta name="description" content="Find coupons, promo codes, discounts, and online deals from popular US stores with DealDrop.">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Open Graph tags for social sharing -->
+    <meta property="og:title" content="DealDrop – Coupons, Promo Codes & Online Deals">
+    <meta property="og:description" content="Discover the latest coupons, promo codes, and deals from popular stores across the US.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.dealdrop-demo.com">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
+                    </svg>
+                    DealDrop
+                </a>
+            </div>
+            
+            <div class="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="deals.html">Deals</a>
+                <a href="stores.html">Stores</a>
+            </div>
+
+            <div class="nav-actions">
+                <div class="nav-search">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                    <input type="text" placeholder="Search stores, brands, or deals">
+                </div>
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Nav -->
+    <div class="mobile-nav" id="mobile-nav">
+        <div class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="deals.html">Deals</a>
+            <a href="stores.html">Stores</a>
+        </div>
+        <div class="nav-search">
+            <input type="text" placeholder="Search...">
+        </div>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>Save More. Shop Smarter.</h1>
+                <p>Discover the latest coupons, promo codes, and deals from popular stores across the US.</p>
+                <div class="hero-actions">
+                    <a href="deals.html" class="btn btn-primary">Find Deals</a>
+                    <a href="stores.html" class="btn btn-secondary">Browse Stores</a>
+                </div>
+                <p style="font-size: 0.875rem; color: var(--text-muted); margin-top: 1rem;">Smart Shopping Starts Here – Compare offers, discover promotions, and find opportunities to save while shopping online.</p>
+            </div>
+        </section>
+
+        <!-- Popular Categories -->
+        <section class="section container">
+            <div class="section-header">
+                <h2>Popular Categories</h2>
+                <p>Browse deals by what you need</p>
+            </div>
+            <div class="grid grid-cols-4">
+                <a href="deals.html" class="card category-card">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" /></svg>
+                    <h3>Fashion</h3>
+                </a>
+                <a href="deals.html" class="card category-card">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+                    <h3>Electronics</h3>
+                </a>
+                <a href="deals.html" class="card category-card">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5" /></svg>
+                    <h3>Beauty</h3>
+                </a>
+                <a href="deals.html" class="card category-card">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg>
+                    <h3>Home & Garden</h3>
+                </a>
+            </div>
+        </section>
+
+        <!-- Featured Deals -->
+        <section class="section" style="background-color: var(--surface-color);">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Featured Deals</h2>
+                    <p>Handpicked savings from top retailers</p>
+                </div>
+                <div class="grid grid-cols-4 deals-grid">
+                    <!-- Deal 1 -->
+                    <div class="card deal-card" data-type="code">
+                        <div class="store-logo-wrap">NIKE</div>
+                        <div class="store-name">Nike</div>
+                        <h3 class="deal-title">25% Off Select Styles</h3>
+                        <div class="deal-meta">
+                            <span class="badge">25% OFF</span>
+                            <span class="badge" style="background:#f3f4f6; color: var(--text-muted);">Promo Code</span>
+                        </div>
+                        <p class="deal-desc">Save on selected footwear and apparel at Nike.</p>
+                        <div class="deal-meta" style="margin-bottom: 1.5rem;">
+                            <span class="expiry"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg> Ends soon</span>
+                        </div>
+                        <button class="btn btn-primary btn-block get-deal-btn">Get Deal</button>
+                    </div>
+                    
+                    <!-- Deal 2 -->
+                    <div class="card deal-card" data-type="deal">
+                        <div class="store-logo-wrap">TARGET</div>
+                        <div class="store-name">Target</div>
+                        <h3 class="deal-title">Up to 40% Off Home</h3>
+                        <div class="deal-meta">
+                            <span class="badge">Up to 40%</span>
+                            <span class="badge" style="background:#f3f4f6; color: var(--text-muted);">Online Deal</span>
+                        </div>
+                        <p class="deal-desc">Discounts applied automatically on selected furniture.</p>
+                        <div class="deal-meta" style="margin-bottom: 1.5rem;">
+                            <span class="expiry"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg> Ongoing</span>
+                        </div>
+                        <button class="btn btn-primary btn-block get-deal-btn">Get Deal</button>
+                    </div>
+
+                    <!-- Deal 3 -->
+                    <div class="card deal-card" data-type="code">
+                        <div class="store-logo-wrap">BB</div>
+                        <div class="store-name">Best Buy</div>
+                        <h3 class="deal-title">$50 Off Laptops</h3>
+                        <div class="deal-meta">
+                            <span class="badge">$50 OFF</span>
+                            <span class="badge" style="background:#f3f4f6; color: var(--text-muted);">Promo Code</span>
+                        </div>
+                        <p class="deal-desc">Extra savings on Windows and Mac laptops.</p>
+                        <div class="deal-meta" style="margin-bottom: 1.5rem;">
+                            <span class="expiry"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg> Expiring soon</span>
+                        </div>
+                        <button class="btn btn-primary btn-block get-deal-btn">Get Deal</button>
+                    </div>
+
+                    <!-- Deal 4 -->
+                    <div class="card deal-card" data-type="deal">
+                        <div class="store-logo-wrap">SEPH</div>
+                        <div class="store-name">Sephora</div>
+                        <h3 class="deal-title">Free Shipping</h3>
+                        <div class="deal-meta">
+                            <span class="badge">FREE SHIP</span>
+                            <span class="badge" style="background:#f3f4f6; color: var(--text-muted);">Online Deal</span>
+                        </div>
+                        <p class="deal-desc">Enjoy free standard shipping on all orders.</p>
+                        <div class="deal-meta" style="margin-bottom: 1.5rem;">
+                            <span class="expiry"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg> Ongoing</span>
+                        </div>
+                        <button class="btn btn-primary btn-block get-deal-btn">Get Deal</button>
+                    </div>
+                </div>
+                <div style="text-align: center; margin-top: 2rem;">
+                    <a href="deals.html" class="btn btn-secondary">View All Deals</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why DealDrop -->
+        <section class="section container">
+            <div class="section-header">
+                <h2>Why DealDrop?</h2>
+                <p>We make it easy to find savings online.</p>
+            </div>
+            <div class="grid grid-cols-4">
+                <div class="card text-center" style="align-items: center; border: none; background: transparent; box-shadow: none;">
+                    <div style="width: 60px; height: 60px; background: var(--badge-bg); color: var(--primary-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="30" height="30"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                    </div>
+                    <h3 style="margin-bottom: 0.5rem;">Verified Deals</h3>
+                    <p style="color: var(--text-muted); font-size: 0.875rem;">We highlight useful offers and make it easy to find savings.</p>
+                </div>
+                <div class="card text-center" style="align-items: center; border: none; background: transparent; box-shadow: none;">
+                    <div style="width: 60px; height: 60px; background: var(--badge-bg); color: var(--primary-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="30" height="30"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                    </div>
+                    <h3 style="margin-bottom: 0.5rem;">Easy to Search</h3>
+                    <p style="color: var(--text-muted); font-size: 0.875rem;">Find deals by store, category, or keyword effortlessly.</p>
+                </div>
+                <div class="card text-center" style="align-items: center; border: none; background: transparent; box-shadow: none;">
+                    <div style="width: 60px; height: 60px; background: var(--badge-bg); color: var(--primary-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="30" height="30"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" /></svg>
+                    </div>
+                    <h3 style="margin-bottom: 0.5rem;">Updated Regularly</h3>
+                    <p style="color: var(--text-muted); font-size: 0.875rem;">Keep your shopping list fresh with new offers.</p>
+                </div>
+                <div class="card text-center" style="align-items: center; border: none; background: transparent; box-shadow: none;">
+                    <div style="width: 60px; height: 60px; background: var(--badge-bg); color: var(--primary-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="30" height="30"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" /></svg>
+                    </div>
+                    <h3 style="margin-bottom: 0.5rem;">100% Free</h3>
+                    <p style="color: var(--text-muted); font-size: 0.875rem;">Browse deals without creating an account.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="newsletter-section">
+            <div class="container">
+                <h2>Get the Best Deals in Your Inbox</h2>
+                <p>Sign up for occasional updates about new coupons, promotions, and shopping deals.</p>
+                <form class="newsletter-form" id="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <a href="index.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
+                            </svg>
+                            DealDrop
+                        </a>
+                    </div>
+                    <p>Discover the latest coupons, promo codes, and deals from popular stores across the US.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="deals.html">Deals</a></li>
+                        <li><a href="stores.html">Stores</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="disclaimer.html">Disclaimer</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 DealDrop. All rights reserved.</p>
+                <p>Affiliate Disclosure: DealDrop may earn a commission when you click certain links or make a purchase.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Deal Modal -->
+    <div class="modal-overlay" id="deal-modal">
+        <div class="modal">
+            <button class="modal-close" id="modal-close" aria-label="Close modal">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            <div class="modal-store" id="modal-store">Store Name</div>
+            <h3 class="modal-title" id="modal-title">Deal Title Goes Here</h3>
+            
+            <p style="color: var(--text-muted); margin-bottom: 1rem; font-size: 0.875rem;">Copy this code and paste it at checkout (demo only).</p>
+            
+            <div class="promo-code-box" id="modal-code">
+                DEMOCODE
+            </div>
+            
+            <div class="modal-actions">
+                <button class="btn btn-primary btn-block" id="copy-code-btn">Copy Code</button>
+                <a href="#" class="btn btn-secondary btn-block">Continue to Store</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="24" height="24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+        </svg>
+    </button>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
